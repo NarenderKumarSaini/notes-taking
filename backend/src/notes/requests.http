@@ -3,7 +3,7 @@ POST http://localhost:3000/notes
 content-type: application/json
 
 {
-    "noteText":"this is ght"
+    "noteText":"this is ght dggfs dgfsd sdfg sdfg"
 }
 
 ###Get all Notes
@@ -16,16 +16,16 @@ content-type: application/json
 
 
 ###update Note
-PATCH  http://localhost:3000/notes/10
+PATCH  http://localhost:3000/notes/14
 content-type: application/json
 
 {
-    "noteText":"this is test"
+    "noteText":"this is t fdasf aewea rar"
 }
 
 
 
 ###Delete Note
-DELETE  http://localhost:3000/notes/10
+DELETE  http://localhost:3000/notes/14
 content-type: application/json
 
