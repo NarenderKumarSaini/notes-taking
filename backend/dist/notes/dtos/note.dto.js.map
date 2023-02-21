@@ -1,1 +1,0 @@
-{"version":3,"file":"note.dto.js","sourceRoot":"","sources":["../../../src/notes/dtos/note.dto.ts"],"names":[],"mappings":";;;AAAA,yDAA+C;AAE/C,MAAa,OAAO;CAGnB;AAHD,0BAGC;AAED,SAAgB,MAAM,CAAC,GAAY;IACjC,MAAM,IAAI,GAAG,IAAI,kBAAI,EAAE,CAAC;IACxB,IAAI,CAAC,QAAQ,GAAG,GAAG,CAAC,QAAQ,CAAC;IAC7B,OAAO,IAAI,CAAC;AACd,CAAC;AAJD,wBAIC"}
