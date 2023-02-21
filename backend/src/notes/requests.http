@@ -1,0 +1,31 @@
+###Create a New Note
+POST http://localhost:3000/notes
+content-type: application/json
+
+{
+    "noteText":"this is ght"
+}
+
+###Get all Notes
+GET http://localhost:3000/notes
+content-type: application/json
+
+# {
+#     "noteText":"this is tesinggsjslflsj"
+# }
+
+
+###update Note
+PATCH  http://localhost:3000/notes/1345
+content-type: application/json
+
+{
+    "noteText":"this is test"
+}
+
+
+
+###Delete Note
+DELETE  http://localhost:3000/notes/1
+content-type: application/json
+
