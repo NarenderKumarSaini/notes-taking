@@ -4,7 +4,7 @@ import getEnvVars from '../../environment';
 
 const { apiUrl } = getEnvVars();
 const instance = axios.create({
-    baseURL: apiUrl//'http://192.168.1.6:3000'
+    baseURL: "https://note-nestjs.onrender.com"
 });
 
 export default instance;
