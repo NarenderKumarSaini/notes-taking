@@ -2,19 +2,21 @@ import { Injectable, NotFoundException } from '@nestjs/common';
 import { Like, Repository } from 'typeorm';
 import { InjectRepository } from '@nestjs/typeorm';
 import { Note } from './entities/note.entity';
+import { CreateNoteDto } from './dtos/create-note.dto';
+import { UpdateNoteDto } from './dtos/update-note.dto';
 
 @Injectable()
 export class NotesService {
   constructor(@InjectRepository(Note) private repo: Repository<Note>) {}
 
-  create(noteText: string) {
-    const note = this.repo.create({ noteText });
-    return this.repo.save(note);
+  create(note: CreateNoteDto) {
+    const noteIns = this.repo.create(note);
+    return this.repo.save(noteIns);
   }
 
-  find(noteText: string) {
+  find(title: string) {
     return this.repo.find({
-      where: noteText ? { noteText: Like(`%${noteText}%`) } : {},
+      where: title ? { title: Like(`%${title}%`) } : {},
     });
   }
 

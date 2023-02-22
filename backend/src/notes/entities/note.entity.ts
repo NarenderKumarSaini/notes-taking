@@ -5,6 +5,9 @@ export class Note {
   @PrimaryGeneratedColumn()
   id: number;
 
+  @Column({ type: 'varchar', length: 100 })
+  title: string;
+
   @Column({ type: 'varchar', length: 512 })
-  noteText: string;
+  content: string;
 }

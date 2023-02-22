@@ -8,13 +8,13 @@ import { Note } from './entities/note.entity';
 export class NoteDao {
   constructor(
     @InjectRepository(Note)
-    private readonly repo: Repository<Note>,
+    private readonly repo: Repository<Note>
   ) {}
 
   async list(data): Promise<PageDto<Note>> {
     const [notes, count] = await this.repo.findAndCount({
       where: data.search?.value
-        ? { noteText: Like(`%${data.search?.value}%`) }
+        ? { content: Like(`%${data.search?.value}%`) }
         : {},
       take: data.length,
       skip: data.start,
@@ -34,10 +34,10 @@ export class NoteDao {
     return this.repo.delete(id);
   }
 
-  findOne(noteText: string) {
+  findOne(content: string) {
     return this.repo.findOne({
       where: {
-        noteText,
+        content,
       },
     });
   }

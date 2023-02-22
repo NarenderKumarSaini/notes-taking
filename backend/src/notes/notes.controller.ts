@@ -19,12 +19,12 @@ export class NotesController {
 
   @Post()
   create(@Body() body: CreateNoteDto) {
-    return this.notesService.create(body.noteText);
+    return this.notesService.create(body);
   }
 
   @Get()
-  findAll(@Query('noteText') noteText: string) {
-    return this.notesService.find(noteText);
+  findAll(@Query('title') title: string) {
+    return this.notesService.find(title);
   }
 
   @Get(':id')

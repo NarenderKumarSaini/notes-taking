@@ -3,29 +3,28 @@ POST http://localhost:3000/notes
 content-type: application/json
 
 {
-    "noteText":"this is ght dggfs dgfsd sdfg sdfg"
+     "title":"title2",
+    "content":"this is ght dggfs dgfsd sdfg sdfg"
 }
 
 ###Get all Notes
 GET http://localhost:3000/notes
 content-type: application/json
 
-# {
-#     "noteText":"this is tesinggsjslflsj"
-# }
 
 
 ###update Note
-PATCH  http://localhost:3000/notes/14
+PATCH  http://localhost:3000/notes/2
 content-type: application/json
 
 {
-    "noteText":"this is t fdasf aewea rar"
+    "title":"title changed",
+    "content":"content changed sdfjdslfj ldsjflkjds lfs daf"
 }
 
 
 
 ###Delete Note
-DELETE  http://localhost:3000/notes/14
+DELETE  http://localhost:3000/notes/2
 content-type: application/json
 
