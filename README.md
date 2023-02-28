@@ -1,13 +1,14 @@
-# notes-taking
+# Note Taking App with React Native and NestJS ✨
  notes taking sample project is a simple where user can add,edit, update and delete notes
 
 
-##Backend
+## Backend
+
 NestJS used as backend 
 database sQlite
 
 
-##Frontend
+## Frontend
 React Native used as Frontend 
 
 
